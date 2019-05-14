@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convertir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.115"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.075" />
+
+    <EditText
+        android:id="@+id/lbl_caja_numeros"
+        android:layout_width="223dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="7dp"
+        android:ems="10"
+        android:hint="@string/txt_hint_caja_numeros"
+        android:inputType="textPersonName"
+        android:text="@string/txt_lbl_cantidadIngresada"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="15dp"
+        android:text="A grados:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="223dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="53dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_caja_numeros">
+
+        <RadioButton
+            android:id="@+id/rbtt_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/txt_radio_c" />
+
+        <RadioButton
+            android:id="@+id/rbtt_f"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/txt_radio_f" />
+
+        <RadioButton
+            android:id="@+id/rbtt_r"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/txt_radio_r" />
+
+        <RadioButton
+            android:id="@+id/rbtt_k"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/txt_radio_k" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/chk_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="17dp"
+        android:text="@string/txt_chk_c"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <CheckBox
+        android:id="@+id/chk_f"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/txt_chk_f"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chk_c" />
+
+    <CheckBox
+        android:id="@+id/chk_k"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/txt_chk_k"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chk_f" />
+
+    <CheckBox
+        android:id="@+id/chk_r"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/txt_chk_r"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chk_k" />
+
+    <EditText
+        android:id="@+id/lbl_resultado_c"
+        android:layout_width="188dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="51dp"
+        android:ems="10"
+        android:hint="@string/txt_lbl_caja_resultados"
+        android:inputType="textPersonName"
+        android:text="@string/txt_lbl_resultado_r"
+        app:layout_constraintStart_toEndOf="@+id/chk_c"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <EditText
+        android:id="@+id/lbl_resultado_f"
+        android:layout_width="183dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="50dp"
+        android:ems="10"
+        android:hint="@string/txt_lbl_caja_resultados"
+        android:inputType="textPersonName"
+        android:text="@string/txt_lbl_resultado_f"
+        app:layout_constraintStart_toEndOf="@+id/chk_f"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_resultado_c" />
+
+    <EditText
+        android:id="@+id/lbl_resultado_k"
+        android:layout_width="188dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="49dp"
+        android:ems="10"
+        android:hint="@string/txt_lbl_caja_resultados"
+        android:inputType="textPersonName"
+        android:text="@string/txt_lbl_resultado_k"
+        app:layout_constraintStart_toEndOf="@+id/chk_k"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_resultado_f" />
+
+    <EditText
+        android:id="@+id/lbl_resultado_r"
+        android:layout_width="190dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="49dp"
+        android:ems="10"
+        android:hint="@string/txt_lbl_caja_resultados"
+        android:inputType="textPersonName"
+        android:text="@string/txt_lbl_resultado_r"
+        app:layout_constraintStart_toEndOf="@+id/chk_r"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_resultado_k" />
+
+    <Button
+        android:id="@+id/btn_convertir"
+        android:layout_width="112dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="115dp"
+        android:text="@string/btn_convertir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_resultado_r" />
+
+</android.support.constraint.ConstraintLayout>

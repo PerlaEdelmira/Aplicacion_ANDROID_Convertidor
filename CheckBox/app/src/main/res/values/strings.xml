@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Actividad_ConvertirTemperaturas</string>
+
+    <string name="txt_lbl_cantidadIngresada"></string>
+    <string name="btn_convertir">Convertir</string>
+
+    <string name="txt_hint_caja_numeros">Solo numeros</string>
+    <string name="txt_lbl_caja_resultados">Resultado</string>
+    <string name="txt_lbl_resultado_c"></string>
+    <string name="txt_lbl_resultado_f"></string>
+    <string name="txt_lbl_resultado_k"></string>
+    <string name="txt_lbl_resultado_r"></string>
+
+    <string name="txt_radio_c"> C </string>
+    <string name="txt_radio_f"> F </string>
+    <string name="txt_radio_r"> R </string>
+    <string name="txt_radio_k"> K </string>
+
+    <string name="txt_chk_c"> C </string>
+    <string name="txt_chk_f"> F </string>
+    <string name="txt_chk_r"> R </string>
+    <string name="txt_chk_k"> K </string>
+</resources>
